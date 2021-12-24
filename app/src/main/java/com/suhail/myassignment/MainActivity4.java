@@ -71,62 +71,72 @@ public class MainActivity4 extends AppCompatActivity {
                     if (adapter.getItem(i).equals("UG") && course.equals("appInd")) {
                         assert feeStructure != null;
                         int amount = feeStructure.applicationFee.iNDIAN.aLL_COURSES.uG.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*18/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (adapter.getItem(i).equals("UG-Diploma") && course.equals("appInd")) {
                         assert feeStructure != null;
                         int amount = feeStructure.applicationFee.iNDIAN.aLL_COURSES.uGDIPLOMA.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*18/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (adapter.getItem(i).equals("PG") && course.equals("appInd")) {
                         assert feeStructure != null;
                         int amount = feeStructure.applicationFee.iNDIAN.aLL_COURSES.pG.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*18/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (adapter.getItem(i).equals("UG") && course.equals("appFor")) {
                         assert feeStructure != null;
                         int amount = feeStructure.applicationFee.fOREIGN.aLL_COURSES.uG.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*28/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (adapter.getItem(i).equals("UG-Diploma") && course.equals("appFor")) {
                         assert feeStructure != null;
                         int amount = feeStructure.applicationFee.fOREIGN.aLL_COURSES.uGDIPLOMA.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*28/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (adapter.getItem(i).equals("PG") && course.equals("appFor")) {
                         assert feeStructure != null;
                         int amount = feeStructure.applicationFee.fOREIGN.aLL_COURSES.pG.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*28/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     //exam fees code goes form here.......
                     if (course.equals("exInd")) {
                         assert feeStructure != null;
                         int amount = feeStructure.examFee.iNDIAN.aLL_COURSES.aLL_LEVEL.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*18/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (course.equals("exFor")) {
                         assert feeStructure != null;
                         int amount = feeStructure.examFee.fOREIGN.aLL_COURSES.aLL_LEVEL.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*28/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (course.equals("exNri")) {
                         assert feeStructure != null;
                         int amount = feeStructure.examFee.nRI.aLL_COURSES.aLL_LEVEL.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*28/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
 
                     if (course.equals("exSaarc")) {
                         assert feeStructure != null;
                         int amount = feeStructure.examFee.sAARC.aLL_COURSES.aLL_LEVEL.amount;
-                        textView.setText(getString(R.string.the_fees_is) + amount);
+                        int gst=amount*18/100;
+                        textView.setText(getString(R.string.the_fees_is) + (amount+gst));
                     }
                 }
             }
